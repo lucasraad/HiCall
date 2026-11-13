@@ -2,7 +2,7 @@
   "name": "HiCall",
   "short_name": "HiCall",
   "description": "Comunicação por voz e chat para seus servidores.",
-  "start_url": "/",
+  "start_url": "/app",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",

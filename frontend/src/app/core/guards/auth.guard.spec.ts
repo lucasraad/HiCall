@@ -46,6 +46,6 @@ describe('adminGuard', () => {
     });
 
     TestBed.runInInjectionContext(() => adminGuard({} as never, {} as never));
-    expect(router.createUrlTree).toHaveBeenCalledWith(['/']);
+    expect(router.createUrlTree).toHaveBeenCalledWith(['/app']);
   });
 });

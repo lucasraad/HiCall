@@ -1,0 +1,35 @@
+<div class="landing" id="inicio">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header wrap">
+    <a href="#inicio" class="wordmark" aria-label="HiCall, início"><span class="brand-mark" aria-hidden="true">h<span>i</span></span>HiCall<span class="brand-period">.</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#experiencia">A experiência</a>
+      <a href="#recursos">Recursos</a>
+      <a routerLink="/app" class="nav-open">Abrir HiCall <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> UM LUGAR PARA ESTAR JUNTO</p>
+        <h1 id="hero-title">A conversa<br>começa com<br>um <span class="hi-word">hi<span class="hi-dot">.</span><svg viewBox="0 0 150 14" aria-hidden="true"><path d="M3 10 Q70 -4 146 8" /></svg></span></h1>
+        <p class="hero-description">Entre na chamada. Compartilhe a tela.<br>Deixe as ideias encontrarem companhia.</p>
+        <div class="hero-actions">
+          <a class="button primary" routerLink="/app">Abrir HiCall <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" [href]="desktopUrl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4" /></svg>Baixar para Windows</a>
+        </div>
+        <p class="hero-note">No navegador ou no desktop. Do seu jeito.</p>
+      </div>
+
+      <app-landing-demo />
+    </section>
+
+    <div class="principles wrap" aria-label="O que você encontra no HiCall"><span>VOZ QUE APROXIMA</span><i aria-hidden="true">✳</i><span>TELAS QUE CONECTAM</span><i aria-hidden="true">✳</i><span>UM ESPAÇO SEU</span></div>
+
+    <app-landing-features />
+
+    <section class="closing wrap" aria-labelledby="closing-title"><div class="closing-spark" aria-hidden="true">✳</div><p class="eyebrow">SEU PRÓXIMO PONTO DE ENCONTRO</p><h2 id="closing-title">Bora dar um <em>hi?</em></h2><p>Abra o HiCall e entre com sua conta para encontrar seus servidores.</p><div class="hero-actions"><a class="button primary" routerLink="/app">Abrir HiCall <span aria-hidden="true">↗</span></a><a class="button secondary" [href]="desktopUrl">Baixar para Windows <span aria-hidden="true">↓</span></a></div><span class="closing-footnote">Já tem acesso? É só entrar. O cadastro público ainda não está disponível.</span></section>
+  </main>
+  <footer class="site-footer wrap"><a href="#inicio" class="wordmark">HiCall<span class="brand-period">.</span></a><span>Conversa boa começa com presença.</span><a href="#inicio">Voltar ao início ↑</a></footer>
+</div>

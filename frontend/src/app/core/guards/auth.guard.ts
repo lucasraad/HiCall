@@ -1,6 +1,11 @@
 import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
+import { isHicallDesktop } from '../desktop/hicall-desktop';
+
+// Instaladores anteriores abrem a raiz; preserve a entrada direta no aplicativo.
+export const landingGuard: CanActivateFn = () =>
+  isHicallDesktop() ? inject(Router).createUrlTree(['/app']) : true;
 
 export const authGuard: CanActivateFn = () => {
   const auth = inject(AuthService);
@@ -21,7 +26,7 @@ export const guestGuard: CanActivateFn = () => {
     return true;
   }
 
-  return router.createUrlTree(['/']);
+  return router.createUrlTree(['/app']);
 };
 
 export const adminGuard: CanActivateFn = () => {
@@ -32,5 +37,5 @@ export const adminGuard: CanActivateFn = () => {
     return true;
   }
 
-  return router.createUrlTree(['/']);
+  return router.createUrlTree(['/app']);
 };

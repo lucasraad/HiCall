@@ -91,7 +91,7 @@ export class LoginComponent {
     this.auth.login(this.email(), this.password()).subscribe({
       next: () => {
         this.loading.set(false);
-        void this.router.navigateByUrl('/');
+        void this.router.navigateByUrl('/app');
       },
       error: (err: unknown) => {
         this.loading.set(false);

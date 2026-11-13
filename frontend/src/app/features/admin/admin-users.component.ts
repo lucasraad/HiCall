@@ -53,7 +53,7 @@ import { isHicallDesktop } from '../../core/desktop/hicall-desktop';
           } @else {
             <a
               class="rounded-md px-3 py-1.5 text-sm text-zinc-300 hover:bg-zinc-800 hover:text-white"
-              routerLink="/"
+              routerLink="/app"
             >
               Voltar ao app
             </a>

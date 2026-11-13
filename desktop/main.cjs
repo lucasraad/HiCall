@@ -1,8 +1,8 @@
 const { app, BrowserWindow, desktopCapturer, ipcMain, session, shell } = require('electron');
 const path = require('path');
 
-const PRODUCTION_URL = 'https://hicall.syntrosis.com';
-const LOCAL_URL = 'http://localhost:4200';
+const PRODUCTION_URL = 'https://hicall.syntrosis.com/app';
+const LOCAL_URL = 'http://localhost:4200/app';
 
 // HW accel ligado → NVENC/MediaFoundation no getDisplayMedia nativo (jogos).
 // Não religar disableHardwareAcceleration: OpenH264 em 1080p movimento caía a ~22.

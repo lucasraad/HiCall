@@ -2,7 +2,7 @@ import { ActivatedRouteSnapshot, DetachedRouteHandle, RouteReuseStrategy } from 
 import { AppShellComponent } from '../../features/shell/app-shell.component';
 
 /**
- * Evita recriar o shell ao navegar entre /, /servidor/:id e /servidor/:id/canal/:id.
+ * Evita recriar o shell ao navegar entre /app, /servidor/:id e /servidor/:id/canal/:id.
  * Sem isso, cada clique destrói o componente e parece reload da página.
  */
 export class AppShellReuseStrategy implements RouteReuseStrategy {
