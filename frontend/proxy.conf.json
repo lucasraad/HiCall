@@ -1,0 +1,7 @@
+{
+  "/sistema": {
+    "target": "https://hicall.syntrosis.com",
+    "secure": true,
+    "changeOrigin": true
+  }
+}

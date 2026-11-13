@@ -1,0 +1,42 @@
+{
+  "name": "hicall-desktop",
+  "version": "1.0.13",
+  "description": "HiCall desktop — mesmo app web, captura nativa de janela e tela",
+  "main": "main.cjs",
+  "author": "HiCall",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "start:local": "electron . --local",
+    "build:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "43.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.syntrosis.hicall",
+    "productName": "HiCall",
+    "directories": {
+      "output": "release-v13"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "package.json",
+      "icon.png"
+    ],
+    "win": {
+      "icon": "icon.png",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "HiCall-Setup.exe",
+      "shortcutName": "HiCall"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/.idea
+/.vscode
+.DS_Store
+Thumbs.db
+*.log
+desktop/node_modules
+desktop/dist
+desktop/.debug-profile/
+desktop/release*/
+frontend/public/downloads/*.exe
+frontend/dist/
+frontend/.angular/cache
+.tmp-e2e/
+.snapshots/
+.cursor/
+backend/database/database.sqlite
+backend/.phpunit.result.cache
